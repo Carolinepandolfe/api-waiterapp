@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import { router } from './router';
 
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://localhost:27017').then(() => {
+mongoose.connect('mongodb://127.0.0.1').then(() => {
   console.log('Connected to MongoDB');
   const app = express();
   const port = 3001;
